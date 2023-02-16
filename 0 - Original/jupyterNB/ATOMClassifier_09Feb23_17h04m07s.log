@@ -1,0 +1,17 @@
+2023-02-09 17:04:07,633 - INFO: ATOMClassifier.__init__()
+2023-02-09 17:04:07,636 - INFO: << ================== ATOM ================== >>
+2023-02-09 17:04:07,639 - ERROR: Exception encountered:
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2531, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2559, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\atom.py", line 98, in __init__
+    self.branch._data, self.branch._idx, self.holdout = self._get_data(arrays, y=y)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\basetransformer.py", line 678, in _get_data
+    data = merge(*self._prepare_input(arrays[0], y=y))
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\typeguard\__init__.py", line 1033, in wrapper
+    retval = func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\basetransformer.py", line 333, in _prepare_input
+    raise ValueError(f"Column {y} not found in X!")
+ValueError: Column familyID not found in X!

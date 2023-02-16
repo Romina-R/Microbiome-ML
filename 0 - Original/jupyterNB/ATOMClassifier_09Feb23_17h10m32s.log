@@ -1,0 +1,23 @@
+2023-02-09 17:10:32,235 - INFO: ATOMClassifier.__init__()
+2023-02-09 17:10:32,237 - INFO: << ================== ATOM ================== >>
+2023-02-09 17:10:32,332 - ERROR: Exception encountered:
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2531, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2559, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\atom.py", line 98, in __init__
+    self.branch._data, self.branch._idx, self.holdout = self._get_data(arrays, y=y)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\basetransformer.py", line 679, in _get_data
+    sets = _no_data_sets(data)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\basetransformer.py", line 581, in _no_data_sets
+    train, test = train_test_split(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\model_selection\_split.py", line 2469, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\model_selection\_split.py", line 2050, in split
+    y = check_array(y, input_name="y", ensure_2d=False, dtype=None)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\utils\validation.py", line 899, in check_array
+    _assert_all_finite(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\utils\validation.py", line 151, in _assert_all_finite
+    raise ValueError("Input contains NaN")
+ValueError: Input contains NaN

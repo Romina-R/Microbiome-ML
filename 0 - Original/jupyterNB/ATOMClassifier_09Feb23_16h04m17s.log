@@ -1,0 +1,21 @@
+2023-02-09 16:04:17,228 - INFO: ATOMClassifier.__init__()
+2023-02-09 16:04:17,230 - INFO: << ================== ATOM ================== >>
+2023-02-09 16:04:17,246 - ERROR: Exception encountered:
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2531, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2559, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\atom.py", line 98, in __init__
+    self.branch._data, self.branch._idx, self.holdout = self._get_data(arrays, y=y)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\basetransformer.py", line 690, in _get_data
+    sets = _no_data_sets(data)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\basetransformer.py", line 581, in _no_data_sets
+    train, test = train_test_split(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\model_selection\_split.py", line 2469, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\model_selection\_split.py", line 1622, in split
+    for train, test in self._iter_indices(X, y, groups):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\model_selection\_split.py", line 1968, in _iter_indices
+    raise ValueError(
+ValueError: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.

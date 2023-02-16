@@ -1,0 +1,61 @@
+/* FOR HOMEWORK!!!! */
+
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background: #F5F5F5;
+  background-image: url("../img/bac_back_copy.png");
+}
+
+.questionairre {
+    opacity: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px 8px 0px 50px;
+    background-color: transparent;
+    /* border-radius: 50px */
+}
+
+.qtext {
+    color: black;
+    /*text-shadow: .5px .5px 15px black;*/
+}
+
+.question_margin {
+    padding: 20px 0px 0px 0px;
+    margin: 0px;
+}
+
+.row {
+    margin: 0px;
+}
+
+#human_role, #sample_type, #have_dog{
+ width:250px;   
+}
+
+.jumbotron {
+   /*background: rgb(200, 54, 54);  This is for ie8 and below */
+   background: rgba(238, 238, 238, 0.80); 
+}
+
+.vl {
+  border-left: 1px solid gray;
+  padding-left: 20px;
+  height: 500px;
+}
+
+.vl_s {
+  border-left: 1px solid gray;
+  padding-left: 20px;
+  height: 150px;
+}
+
+hr {
+  border-top: 1px solid black;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}

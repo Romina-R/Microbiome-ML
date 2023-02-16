@@ -1,0 +1,197 @@
+2023-02-09 16:57:56,902 - INFO: ATOMClassifier.__init__()
+2023-02-09 16:57:56,905 - INFO: << ================== ATOM ================== >>
+2023-02-09 16:57:56,923 - INFO: Algorithm task: multiclass classification.
+2023-02-09 16:57:56,923 - INFO: Parallel processing with 2 cores.
+2023-02-09 16:57:56,924 - INFO: 
+2023-02-09 16:57:56,924 - INFO: System info ====================== >>
+2023-02-09 16:57:56,924 - INFO: Machine: AMD64
+2023-02-09 16:57:56,925 - INFO: OS: Windows-10-10.0.19045-SP0
+2023-02-09 16:57:56,926 - INFO: Python version: 3.9.13
+2023-02-09 16:57:56,926 - INFO: Python build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-02-09 16:57:56,928 - INFO: ATOM version: 5.0.1
+2023-02-09 16:57:56,928 - INFO: 
+2023-02-09 16:57:56,928 - INFO: 
+2023-02-09 16:57:56,929 - INFO: ATOMClassifier.stats()
+2023-02-09 16:57:56,929 - INFO: Dataset stats ==================== >>
+2023-02-09 16:57:56,929 - INFO: Shape: (135, 1034)
+2023-02-09 16:57:57,068 - INFO: Memory: 1.12 MB
+2023-02-09 16:57:58,187 - INFO: Scaled: False
+2023-02-09 16:57:58,195 - INFO: Outlier values: 1872 (1.7%)
+2023-02-09 16:57:58,196 - INFO: -------------------------------------
+2023-02-09 16:57:58,203 - INFO: Train set size: 108
+2023-02-09 16:57:58,209 - INFO: Test set size: 27
+2023-02-09 16:57:58,210 - INFO: -------------------------------------
+2023-02-09 16:57:58,235 - INFO: |           |   dataset |     train |      test |
+2023-02-09 16:57:58,236 - INFO: | --------- | --------- | --------- | --------- |
+2023-02-09 16:57:58,237 - INFO: | family#17 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,238 - INFO: | family#18 |   5 (1.0) |   4 (1.0) |   1 (1.0) |
+2023-02-09 16:57:58,243 - INFO: | family#19 |   6 (1.2) |   4 (1.0) |   2 (2.0) |
+2023-02-09 16:57:58,245 - INFO: | family#26 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,246 - INFO: | family#27 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,247 - INFO: | family#3  |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,248 - INFO: | family#30 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,249 - INFO: | family#31 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,250 - INFO: | family#45 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,251 - INFO: | family#46 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,252 - INFO: | family#48 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,253 - INFO: | family#49 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,254 - INFO: | family#50 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,255 - INFO: | family#52 |   5 (1.0) |   4 (1.0) |   1 (1.0) |
+2023-02-09 16:57:58,257 - INFO: | family#53 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,258 - INFO: | family#56 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,264 - INFO: | family#57 |   6 (1.2) |   4 (1.0) |   2 (2.0) |
+2023-02-09 16:57:58,266 - INFO: | family#6  |   5 (1.0) |   4 (1.0) |   1 (1.0) |
+2023-02-09 16:57:58,267 - INFO: | family#62 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,268 - INFO: | family#64 |   6 (1.2) |   4 (1.0) |   2 (2.0) |
+2023-02-09 16:57:58,269 - INFO: | family#66 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,270 - INFO: | family#7  |   6 (1.2) |   4 (1.0) |   2 (2.0) |
+2023-02-09 16:57:58,271 - INFO: | family#71 |   6 (1.2) |   5 (1.2) |   1 (1.0) |
+2023-02-09 16:57:58,274 - INFO: 
+2023-02-09 16:59:35,099 - INFO: 
+2023-02-09 16:59:35,099 - INFO: ATOMClassifier.balance()
+2023-02-09 16:59:35,113 - INFO: 
+2023-02-09 16:59:35,113 - INFO: Balancer.transform()
+2023-02-09 16:59:35,129 - INFO: Oversampling with SMOTE...
+2023-02-09 16:59:35,151 - ERROR: Exception encountered:
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2531, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2559, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\typeguard\__init__.py", line 1033, in wrapper
+    retval = func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\data_cleaning.py", line 470, in transform
+    X, y = estimator.fit_resample(X, y)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\imblearn\base.py", line 203, in fit_resample
+    return super().fit_resample(X, y)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\imblearn\base.py", line 88, in fit_resample
+    output = self._fit_resample(X, y)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\imblearn\over_sampling\_smote\base.py", line 355, in _fit_resample
+    nns = self.nn_k_.kneighbors(X_class, return_distance=False)[:, 1:]
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\neighbors\_base.py", line 749, in kneighbors
+    raise ValueError(
+ValueError: Expected n_neighbors <= n_samples,  but n_samples = 4, n_neighbors = 6
+2023-02-09 17:00:06,277 - INFO: 
+2023-02-09 17:00:06,277 - INFO: ATOMClassifier.feature_selection()
+2023-02-09 17:00:06,291 - INFO: 
+2023-02-09 17:00:06,291 - INFO: FeatureSelector.fit()
+2023-02-09 17:00:06,297 - INFO: Fitting FeatureSelector...
+2023-02-09 17:00:11,776 - ERROR: Exception encountered:
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\externals\loky\process_executor.py", line 428, in _process_worker
+    r = call_item()
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\externals\loky\process_executor.py", line 275, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\_parallel_backends.py", line 620, in __call__
+    return self.func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\utils\fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\feature_selection\_rfe.py", line 37, in _rfe_single_fit
+    return rfe._fit(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\feature_selection\_rfe.py", line 296, in _fit
+    estimator.fit(X[:, features], y, **fit_params)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\xgboost\core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\xgboost\sklearn.py", line 1440, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22], got ['family#17' 'family#18' 'family#19' 'family#26' 'family#27' 'family#3'
+ 'family#30' 'family#31' 'family#45' 'family#46' 'family#48' 'family#49'
+ 'family#50' 'family#52' 'family#53' 'family#56' 'family#57' 'family#6'
+ 'family#62' 'family#64' 'family#66' 'family#7' 'family#71']
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2531, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2559, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\typeguard\__init__.py", line 1033, in wrapper
+    retval = func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\feature_engineering.py", line 1663, in fit
+    self._estimator = RFECV(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\feature_selection\_rfe.py", line 723, in fit
+    scores = parallel(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\parallel.py", line 1098, in __call__
+    self.retrieve()
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\parallel.py", line 975, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\_parallel_backends.py", line 567, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "C:\Users\Romina\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 446, in result
+    return self.__get_result()
+  File "C:\Users\Romina\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22], got ['family#17' 'family#18' 'family#19' 'family#26' 'family#27' 'family#3'
+ 'family#30' 'family#31' 'family#45' 'family#46' 'family#48' 'family#49'
+ 'family#50' 'family#52' 'family#53' 'family#56' 'family#57' 'family#6'
+ 'family#62' 'family#64' 'family#66' 'family#7' 'family#71']
+2023-02-09 17:01:26,349 - INFO: 
+2023-02-09 17:01:26,349 - INFO: ATOMClassifier.feature_selection()
+2023-02-09 17:01:26,365 - INFO: 
+2023-02-09 17:01:26,365 - INFO: FeatureSelector.fit()
+2023-02-09 17:01:26,371 - INFO: Fitting FeatureSelector...
+2023-02-09 17:01:31,796 - ERROR: Exception encountered:
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\externals\loky\process_executor.py", line 428, in _process_worker
+    r = call_item()
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\externals\loky\process_executor.py", line 275, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\_parallel_backends.py", line 620, in __call__
+    return self.func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\parallel.py", line 288, in __call__
+    return [func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\parallel.py", line 288, in <listcomp>
+    return [func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\utils\fixes.py", line 117, in __call__
+    return self.function(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\feature_selection\_rfe.py", line 37, in _rfe_single_fit
+    return rfe._fit(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\feature_selection\_rfe.py", line 323, in _fit
+    self.estimator_.fit(X[:, features], y, **fit_params)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\xgboost\core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\xgboost\sklearn.py", line 1440, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22], got ['family#17' 'family#18' 'family#19' 'family#26' 'family#27' 'family#3'
+ 'family#30' 'family#31' 'family#45' 'family#46' 'family#48' 'family#49'
+ 'family#50' 'family#52' 'family#53' 'family#56' 'family#57' 'family#6'
+ 'family#62' 'family#64' 'family#66' 'family#7' 'family#71']
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2531, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2559, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\typeguard\__init__.py", line 1033, in wrapper
+    retval = func(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\feature_engineering.py", line 1663, in fit
+    self._estimator = RFECV(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\sklearn\feature_selection\_rfe.py", line 723, in fit
+    scores = parallel(
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\parallel.py", line 1098, in __call__
+    self.retrieve()
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\parallel.py", line 975, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\joblib\_parallel_backends.py", line 567, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "C:\Users\Romina\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 446, in result
+    return self.__get_result()
+  File "C:\Users\Romina\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22], got ['family#17' 'family#18' 'family#19' 'family#26' 'family#27' 'family#3'
+ 'family#30' 'family#31' 'family#45' 'family#46' 'family#48' 'family#49'
+ 'family#50' 'family#52' 'family#53' 'family#56' 'family#57' 'family#6'
+ 'family#62' 'family#64' 'family#66' 'family#7' 'family#71']

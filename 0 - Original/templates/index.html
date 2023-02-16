@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>POOC</title>
+
+  <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+
+  <!-- Leaflet CSS & JS & PLOTLY--> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+  <!-- PLOTLY -->
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <!-- Our CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+  <!-- ****************************** Nav Bar ****************************** -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img src="../static/img/pooc_title_color.png" class="mx-auto d-block">
+      </div>
+    </div>
+  </nav>
+  <!-- ****************************** CONTAINERS ****************************** -->
+  <div class="container top_marg">
+    <div class="row-fluid">
+
+      <div class="jumbotron">
+        <h2>Cohabiting Family Members Share Microbiota with one another and with their Dogs</h2>
+        <h4>Se Jin Song, Christian Lauber, Elizabeth K Costello, Catherine A Lozupone, Gregory Humphrey, Donna Berg-Lyons, J Gregory Caporaso, Dan Knights, Jose C Clemente, Sara Nakielny, Jeffrey I Gordon, Noah Fierer, Rob Knight</h3>
+        <p>Human-associated microbial communities vary across individuals: possible contributing factors include (genetic) relatedness, diet, and age. However, our surroundings, including individuals with whom we interact, also likely shape our microbial communities. To quantify this microbial exchange, we surveyed fecal, oral, and skin microbiota from 60 families (spousal units with children, dogs, both, or neither). Household members, particularly couples, shared more of their microbiota than individuals from different households, with stronger effects of co-habitation on skin than oral or fecal microbiota. Dog ownership significantly increased the shared skin microbiota in cohabiting adults, and dog-owning adults shared more ‘skin’ microbiota with their own dogs than with other dogs. Although the degree to which these shared microbes have a true niche on the human body, vs transient detection after direct contact, is unknown, these results suggest that direct and frequent contact with our cohabitants may significantly shape the composition of our microbial communities.</p>
+        <p><a class="btn btn-primary btn-lg" href="https://elifesciences.org/articles/00458" target="_blank" role="button">Learn more</a></p>
+      </div>
+
+      <hr>
+      
+      <div class="jumbotron">
+        <!-- <h2>Summary Visualization</h2> -->
+        <!-- <div class='tableauPlaceholder' id='viz1581017574140' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;an&#47;analysisintableaumicrobiomePD&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='analysisintableaumicrobiomePD&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;an&#47;analysisintableaumicrobiomePD&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1581017574140');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+        <!-- @Karina, plotly stuff would be placed here -->
+        <row>
+          <div class="col-md-6">  
+            <div id='myDiv_2' name='myDiv_2'></div>
+          </div>
+          
+          <div class="col-md-6">
+            <div id='myDiv_3' name='myDiv_3'></div>
+          </div>
+        </row>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id='myDiv_1' name='myDiv_1'></div>
+       
+      </div>
+      <hr>
+
+      <div class="jumbotron">
+       <h2> Predicting Family Relationships</h2>
+       <p> What data would you like to use to train the models?</p>
+       <hr>
+       <div class="container-fluid">
+
+        <row>
+          <div class="col-md-4"> 
+            <form id="my_form">
+              <!-- <form method="POST"> -->
+                <div class="row justify-content-md-center question_margin">
+                  <div class="col-3">
+                    <p>Dog Ownership:</p>
+                  </div>
+                </div>
+                <div class="row justify-content-md-center">
+                  <div class="col-3">
+                    <select class="form-control" id="have_dog" name="have_dog">
+                      <option selected="true" value="all">All</option>
+                      <!-- <option class="unselected" value="only_non_dog_owners">Only non dog owners</option> -->
+                      <option class="unselected" value="only_dog_owners">Only dog owners</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row justify-content-md-center question_margin">
+                  <div class="col-3">
+                    <p>Sample Type:</p>
+                  </div>
+                </div>
+                <div class="row justify-content-md-center">
+                  <div class="col-3">
+                    <select class="form-control" id="sample_type" name="sample_type">
+                      <option selected="true" value="all">All</option>
+                      <option class="unselected" value="skin">Skin</option>
+                      <option class="unselected" value="saliva">Saliva</option>
+                      <option class="unselected" value="stool">Stool</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row justify-content-md-center question_margin">
+                  <div class="col-3">
+                    <p>Family Role:</p>
+                  </div>
+                </div>
+                <div class="row justify-content-md-center">
+                  <div class="col-3">
+                    <select id="human_role" name = "human_role" class="form-control" required>
+                      <option selected="true" value="all">All</option>
+                      <option value="Partner">Adults</option>
+                      <option value="Offspring">Offspring</option>
+                    </select>
+                  </div>
+                </div>
+                <br>
+                <div class="row justify-content-md-center">
+                  <input class="btn btn-primary my-2" id="btn2" type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+
+            
+
+            <div class="col-md-8"> 
+              <div class="vl">
+                <div id="res_jumbo" style="display: none;">
+                  <h2>Results</h2>
+                  <hr>
+                  <div class="col-md-6"> 
+                    <h3>Prediction Accuracy for Dogs:</h3>
+                    <hr>
+                    <div id = "res_show_dog"></div>        
+                  </div>
+                  <div class="col-md-6"> 
+                    <div class="vl_s">
+                      <h3>Prediction Accuracy for Humans:</h3>
+                      <hr>
+                      <div id = "res_show_human"></div>        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </row>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/app2.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/app3.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/app4.js') }}"></script>
+
+<!-- FOR Karina's plots -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script> -->
+      <!-- <script src="{{ url_for('static', filename='js/config.js') }}"></script> -->
+      <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+   
+      <!-- <script src="{{ url_for('static', filename='js/app2.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/app3.js') }}"></script> -->
+      <!-- <script src="{{ url_for('static', filename='js/app4.js') }}"></script> -->
+
+      <!-- <script src="{{ url_for('static', filename='js/app_allPlotly.js') }}"></script> -->
+    </body>
+    </html>

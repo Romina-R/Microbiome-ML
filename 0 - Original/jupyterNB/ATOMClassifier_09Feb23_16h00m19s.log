@@ -1,0 +1,15 @@
+2023-02-09 16:00:19,398 - INFO: ATOMClassifier.__init__()
+2023-02-09 16:00:19,400 - INFO: << ================== ATOM ================== >>
+2023-02-09 16:00:19,419 - ERROR: Exception encountered:
+Traceback (most recent call last):
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2531, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\utils.py", line 2559, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\atom.py", line 98, in __init__
+    self.branch._data, self.branch._idx, self.holdout = self._get_data(arrays, y=y)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\basetransformer.py", line 695, in _get_data
+    sets = _has_data_sets(train, test)
+  File "c:\Users\Romina\Documents\Data Science\1.PROJECTS\2.MicroBiome\venv_MicroBiome\lib\site-packages\atom\basetransformer.py", line 650, in _has_data_sets
+    raise ValueError("The train and test set do not have the same columns.")
+ValueError: The train and test set do not have the same columns.
